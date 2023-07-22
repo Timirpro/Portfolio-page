@@ -185,7 +185,7 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
 		margin: 0 0 1rem 0;
 	}
 
@@ -2622,14 +2622,19 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			border: 1px solid #8c8d8b;
+			/* border-radius: 1rem; */
 		}
-
+		.image.fit:hover {
+			border-color: #18bfef !important;
+		}
 			.image.fit:first-child {
 				margin-top: 0;
 			}
 
 			.image.fit img {
 				width: 100%;
+				height: 100%;
 			}
 
 		.image.main {
@@ -2674,6 +2679,7 @@ input, select, textarea {
 			-webkit-transform: scale(1.05);
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
+			border-color: #18bfef !important;
 		}
 
 /* Actions */
@@ -2685,6 +2691,7 @@ input, select, textarea {
 		display: flex;
 		cursor: default;
 		list-style: none;
+		margin-top: 5rem;
 		margin-left: -1rem;
 		padding-left: 0;
 	}
